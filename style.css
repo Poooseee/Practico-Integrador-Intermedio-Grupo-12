@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+}
+
+.img_logo img{
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.img_logo
+{
+    height: 15vh;
+    width: 20%;
+    background-color: red;
+}
+
+.anclas a{
+    margin: auto;
+}
+
+.anclas{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    background-color: black;
+}
+
+.nav_bar
+{
+    background-color: goldenrod;
+    height: 15vh; 
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+.bg_fvs
+{
+    background-color: green;
+    height: 80vh;
+    width: 100%;
+}
+.abt_us
+{
+    background-color: red;
+    height: 500px;
+    width: 100%;
+}
+.menu
+{
+    background-color: purple;
+    height: 500px;
+    width: 100%;
+}
+.suc
+{
+    background-color: yellow;
+    height: 500px;
+    width: 100%;
+}
+.wrk_wt_us
+{
+    background-color: blue;
+    height: 500px;
+    width: 100%;
+}
+.footer
+{
+    background-color: grey;
+    height: 500px;
+    width: 100%;
+}
+.contenedor_body{
+    padding-top: 144px;
+}
