@@ -7,6 +7,8 @@
     width: 100px;
     margin-left: 20px;
     margin-top: 25px;
+    max-width: 100%;
+    height: auto;
 }
 
 .img_logo
@@ -14,6 +16,7 @@
     height: 15vh;
     width: 20%;
     background-color: red;
+    overflow: hidden;
 }
 
 .anclas a{
@@ -72,5 +75,5 @@
     width: 100%;
 }
 .contenedor_body{
-    padding-top: 144px;
+    padding-top: 7.5%;
 }
