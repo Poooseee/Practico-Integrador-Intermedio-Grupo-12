@@ -3,15 +3,16 @@
 }
 
 .img_logo img{
-    width:25vh;
-    margin-left: 9%;
+    width:45%;
 }
 
 .img_logo
 {
-    height: 25vh;
+    height: auto;
     width: 15%;
     overflow: hidden;
+    margin: auto;
+    margin-left: 2%;
 }
 
 .anclas a{
@@ -21,7 +22,7 @@
 .anclas{
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 85%;
     background-color: black;
 
 }
@@ -29,7 +30,7 @@
 .nav_bar
 {
     background-color: black;
-    height: 25vh; 
+    height: 15vh; 
     width: 100%;
     display: flex;
     position: fixed;
@@ -66,7 +67,7 @@
     width: 100%;
 }
 .contenedor_body{
-    padding-top: 12.2%;
+    padding-top: 7.5%
 }
 
 .row img
