@@ -85,13 +85,11 @@ margin: 25px;
 }
 .container-fluid
 {
-
     padding-bottom: 5%;
     padding-top: 5%;
     margin-left: 1%;
 }
-#menu
-{ scroll-padding-top: 25vh;}
+
 span
 {
     color: purple;
