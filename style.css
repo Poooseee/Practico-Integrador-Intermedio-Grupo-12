@@ -28,14 +28,17 @@
     --bg-primary-color: rgb(15, 15, 15);
     --bg-secondary-color: #A954DF;
     --bg-white-color: rgba(247, 233, 249, 1);
-    --terciary-bg-color: #4787cc;
-
+    --terciary-bg-color: #4787cc; 
 }
+.contenedor_body {
+    padding-top: var(--navtam);
+}
+
+/*NAV*/
 
 .img_logo img {
     width: 55%;
 }
-
 .anclas a {
     margin: auto;
     text-decoration: none;
@@ -71,13 +74,13 @@
     transition: all 0.5s ease-in-out;
 }
 
-
 .anclas {
     display: flex;
     justify-content: space-around;
     width: 85%;
 }
 
+/*Burgers Favoritas*/
 .bg_fvs img {
     height: 108%;
     width: 100%;
@@ -88,24 +91,63 @@
     width: 100%;
     overflow: hidden;
 }
-
+/*Sobre nosotros*/
 .abt_us {
     background-color: var(--bg-primary-color);
     height: 520px;
     width: 100%;
 }
+.img-abt_us
+{
+   padding-top: 3%;
+   display: inline-block;
+}
+.img-abt_us img
+{
+    width: 120%;
+}
+.texto-abt_us
+{
+    display: inline-block;
+    width: 65%;
+    float: right;
+    margin-top: 2%;
+    text-align: center;
+}
+.texto-abt_us h2
+{
+    color: var(--bg-white-color);
+    font-size: 60px;
+    font-family: var(--font-pixel);
+}
+#Nosotros
+{
+    color: rgb(19, 134, 228);
+    font-size: 70px;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+#sobre
+{
+    margin-right: 25%;
+    color: var(--primary-color);
+}
+
+/*Sucursales*/
 
 .suc {
     background-color: yellow;
     height: 500px;
     width: 100%;
 }
+/*Trabaja con nosotros*/
 
 .wrk_wt_us {
     background-color: blue;
     height: 500px;
     width: 100%;
 }
+/*footer*/
 
 .footer {
     background-color: grey;
@@ -113,9 +155,7 @@
     width: 100%;
 }
 
-.contenedor_body {
-    padding-top: var(--navtam);
-}
+/*menu*/
 
 .row img {
     width: 170px;
@@ -136,6 +176,7 @@
 padding-top: 3%;
 padding-bottom: 3%;
 }
+
 .MENU
 {
 background-color: var(--bg-white-color);
@@ -178,45 +219,11 @@ span {
 {
     width: 65%;
 }
+
 #SpriteZero
 {
     margin-top: 13%;
     width: 57%;
     height: 150px;
 }
-.img-abt_us
-{
-   padding-top: 3%;
-   display: inline-block;
-}
-.img-abt_us img
-{
-    width: 120%;
-}
-.texto-abt_us
-{
-    display: inline-block;
-    width: 65%;
-    float: right;
-    margin-top: 2%;
-    text-align: center;
-}
-.texto-abt_us h2
-{
-    color: var(--bg-white-color);
-    font-size: 60px;
-    font-family: var(--font-pixel);
-}
-#Nosotros
-{
-    color: rgb(19, 134, 228);
-    font-size: 70px;
-    margin-left: 25%;
-    margin-top: 2%;
-}
-#sobre
-{
-    margin-right: 25%;
-    color: var(--primary-color);
-}
-
+    
