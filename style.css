@@ -94,12 +94,12 @@
 /*Sobre nosotros*/
 .abt_us {
     background-color: var(--bg-primary-color);
-    height: 520px;
+    height: 720px;
     width: 100%;
 }
 .img-abt_us
 {
-   padding-top: 3%;
+   padding-top: 7%;
    display: inline-block;
 }
 .img-abt_us img
