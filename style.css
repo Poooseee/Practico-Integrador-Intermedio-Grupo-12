@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    overflow-x: hidden;
 }
 
 :root {
@@ -134,21 +135,23 @@
 /*Sucursales*/
 
 .suc {
-    background-color: yellow;
+    background-color: var(--bg-primary-color);
     height: 500px;
     width: 100%;
+    padding-bottom: 3%;
 }
 /*Trabaja con nosotros*/
 
 .wrk_wt_us {
-    background-color: blue;
-    height: 500px;
+    background-color: var(--bg-primary-color);
+    height: 700px;
     width: 100%;
+    border-bottom: 2px solid var(--primary-color);
 }
 /*footer*/
 
 .footer {
-    background-color: grey;
+    background-color: var(--bg-primary-color);
     height: 500px;
     width: 100%;
 }
@@ -296,10 +299,8 @@ span {
 }
 
 #Sucursales{
-    margin-top: 100px;
     display: flex;
     justify-content: space-around;
-    padding-top: 15px;
 }
 
 .sucursalesdiv{
@@ -308,13 +309,20 @@ span {
     flex: 1;
     height: 80%;
     text-align: center;
-    align-items: center; 
+    align-items: center;
+    margin-top: 50px; 
+    font-family: var(--font-primary);
 }
 h4{
     font-size: var(--main-h4);
 }
 .gps h3{
     margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+.gps a{
+    text-decoration: none;
+    color: var(--primary-color);
 }
 .gps iframe{
     width: 300px;
@@ -324,15 +332,8 @@ h4{
     width: 200px;
     height: 200px;
 }
-iframe:hover{
-    transform: scale(1.06,1.06);
-    transition: all 0.5s;
-}
 iframe{
     border-radius: 2em;
-}
-a{
-    font-style: none;
 }
 /*formulario*/
 input{
@@ -350,7 +351,7 @@ select{
     margin-bottom: 2%;
 }
 .formulario{
-    padding-top: 3%;
+    margin-top: 5%;
     margin-left: 3%;
     font-size: var(--font-size--primary);
     font-family: var(--font-primary);
@@ -371,13 +372,17 @@ margin-bottom: 3%;
   top: 5%;
 }
 .formulario h2{
+    text-align: center;
     font-family: var(--font-pixel);
     margin-bottom: 2%;
+    color: var(--primary-color);
 }
 .formulario h3{
+    text-align: center;
     padding-bottom: 2%;
+    color: var(--secondary-color);
 }
 .wrk_wt_us
 {
-    padding-bottom: 3%;
+    color: var(--bg-white-color);
 }
