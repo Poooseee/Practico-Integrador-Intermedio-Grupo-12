@@ -436,7 +436,7 @@ border-radius: 2em;
 .logo_pie{
     display: inline-block;
     margin-top: 5.3%;
-    margin-left: 20%;
+    margin-left: 23%;
 }
 #logo_footer{
     height: 300px;
@@ -445,11 +445,12 @@ border-radius: 2em;
 .mail_footer{
     display: inline-block;
     margin-bottom: 150px;
+    margin-left: 10%;
 }
 .ig_footer{
     display: inline-block;
     margin-bottom: 150px;
-    margin-left: 200px;
+    margin-left: 10%;
 }
 .ig_footer img{
     height: 30px;
