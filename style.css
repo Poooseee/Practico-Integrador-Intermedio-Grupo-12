@@ -150,9 +150,65 @@
 /*footer*/
 
 .footer {
-    background-color: var(--bg-primary-color);
-    height: 500px;
+    background-color: rgb(32, 32, 32);
+    height: 250px;
     width: 100%;
+}
+.linea-footer{
+    background-color: rgb(15, 15, 15);
+    height: 7px;
+    width: 100%;
+}
+.icon-footer{
+    position: relative;
+    width: 100%;
+    left: 45%;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-left: 3px;
+}
+.container-footer{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+.textos-footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+}
+#ig-footer{ 
+    position: absolute;
+    left: 70%;
+    transform: translateX(-20%);
+    margin-top: -135px;
+}
+#textoig{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 74%;
+    transform: translateX(-20%);
+    margin-top: -126px;
+}
+#mail-footer{
+    position: absolute;
+    left: 29%;
+    transform: translateX(-20%);
+    margin-top: -135px;
+}
+#textomail{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 282px;
+    margin-top: -125px;
+}
+.derechos-footer{
+    background-color: black;
+    padding: 15px 10px;
+    height: 35px;
+}
+.derechos{
+    color: white;
+    text-align: center;
+
 }
 
 /*menu*/
