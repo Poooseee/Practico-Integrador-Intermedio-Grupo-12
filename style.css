@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    overflow-x: hidden;
 }
 
 :root {
@@ -169,6 +170,7 @@
     justify-content: space-around;
     padding-top: 3%;
     text-align: center;
+    overflow-y: hidden;
 }
 
 .tipos
@@ -200,11 +202,9 @@ color: darkblue;
     padding-top: 2%;
     margin: 0;
 }
-
 span {
     color: var(--font-secondary-color);
 }
-
 .mercaderia:hover {
     transform: scale(1.1);
     transition: all 0.5s ease;
@@ -323,6 +323,10 @@ h4{
     text-decoration: none;
     color: var(--primary-color);
 }
+.gps a:hover{
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
 .gps iframe{
     width: 300px;
     height: 300px;
@@ -369,3 +373,7 @@ select{
     /*padding-bottom: 2%;*/
     color: var(--secondary-color);
 }
+.formulario form{
+    margin-top: 2%;
+}
+
