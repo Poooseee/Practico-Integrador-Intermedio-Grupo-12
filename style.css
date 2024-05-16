@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --navtam:20vh;
+    /*--fonts--*/
+    /*colors*/
+    --font-secondary-color: #b010c2;
+    /*sizes*/
+    --font-size--primary: 16px;
+    --font-size-big: 70px;
+    /*weights*/
+    --font-weight-normal: 550;
+    --font-weight-gruesa: 450;
+    /*fuentes*/
+    --font-primary:
+    "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    --font-secondary:
+    "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    --font-pixel:
+    "Press Start 2P", system-ui;
+    /*--fonts--*/
+    /*colors*/
+    --primary-color: #A954DF;
+    --secondary-color: rgb(19, 134, 228);
+    --bg-primary-color: rgb(15, 15, 15);
+    --bg-secondary-color: #A954DF;
+    --bg-white-color: rgba(247, 233, 249, 1);
+}
+.contenedor_body {
+    padding-top: var(--navtam);
+}
+
+/*NAV.*/
+
+.img_logo img {
+    width: 55%;
+}
+.anclas a {
+    margin: auto;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    font-size: var(--font-size--primary) ;
+    font-weight: var(--font-weight-normal);
+}
+.anclas a:hover
+{
+    color: var(--secondary-color);
+}   
+.nav_bar {
+    background-color: var(--bg-primary-color);
+    height: var(--navtam);
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 9;
+    border-bottom: 2px solid var(--bg-secondary-color);
+}
+
+.img_logo {
+    height: auto;
+    width: 15%;
+    overflow: hidden;
+    margin: auto;
+    margin-left: 2%;
+}
+#logo:hover
+{
+    transform: scale(1.03);
+    transition: all 0.5s ease-in-out;
+}
+
+.anclas {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+}
+
+/*Burgers Favoritas*/
+.bg_fvs img {
+    height: 108%;
+    width: 100%;
+}
+
+.bg_fvs {
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+}
+/*Sobre nosotros*/
+.abt_us {
+    background-color: var(--bg-primary-color);
+    height: 720px;
+    width: 100%;
+}
+.img-abt_us
+{
+   padding-top: 7%;
+   display: inline-block;
+}
+.img-abt_us img
+{
+    width: 120%;
+}
+.texto-abt_us
+{
+    width: 65%;
+    float: right;
+    margin-top: 2%;
+    text-align: center;
+}
+.texto-abt_us h2
+{
+    font-size: 60px;
+    font-family: var(--font-pixel);
+}
+#Nosotros
+{
+    color: var( --secondary-color);
+    font-size: 70px;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+#sobre
+{
+    margin-right: 25%;
+    color: var(--primary-color);
+}
+
+/*Sucursales*/
+
+.suc {
+    background-color: var(--bg-primary-color);
+    height: 500px;
+    width: 100%;
+    padding-bottom: 3%;
+}
+/*Trabaja con nosotros*/
+
+.wrk_wt_us {
+    background-color: var(--bg-primary-color);
+    height: 700px;
+    width: 100%;
+    border-bottom: 2px solid var(--primary-color);
+}
+/*footer*/
+
+.footer {
+    background-color: var(--bg-primary-color);
+    height: 500px;
+    width: 100%;
+}
+
+/*menu*/
+
+.row img {
+    width: 170px;
+    border-radius: 10%;
+    height: 170px;
+    margin: 25px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.tipos
+{
+padding-top: 3%;
+padding-bottom: 3%;
+}
+
+.MENU
+{
+background-color: var(--bg-white-color);
+font-family: var(--font-pixel);
+font-size: 10px;
+color: darkblue;
+}
+
+.MENU h2 {
+    margin-left: 2%;
+}
+
+#menu {
+    color: var(--bg-white-color);
+    text-align: center;
+    background-color: var(--bg-secondary-color);
+    font-size: var(--font-size-big);
+    font-weight: var(--font-weight-gruesa);
+    font-family: var(--font-secondary);
+    height: 150px;
+    padding-top: 2%;
+    margin: 0;
+}
+
+span {
+    color: var(--font-secondary-color);
+}
+
+.mercaderia:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+#CocaZero
+{
+    margin-top: 13%;
+    width: 56%;
+    height: 160px;
+}
+#Sprite
+{
+    width: 65%;
+}
+
+#SpriteZero
+{
+    margin-top: 13%;
+    width: 57%;
+    height: 150px;
+}
+/*Carrousell*/
+.puntos
+{
+    list-style:none
+}
+.carrousel {
+    width: 100%;
+    max-width: 240em;
+    padding: 3%;
+    transition: all 0.4s ease;
+    background-color: white;
+    overflow: hidden;
+  }
+  .carrousel .grande {
+    width: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    background-color: white;
+    padding: 3%;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+  .carrousel .img {
+    width: calc(100% / 4 - 4em);
+    min-height: 10vh;
+    transition: all 0.4s ease;
+    background-color: white;
+  }
+  .carrousel .puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carrousel .punto {
+    width: 1em;
+    height: 1em;
+    margin: 1em 1em 0;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: orange;
+  }
+  .carrousel .punto.activo {
+    background-color: lightblue;
+  }
+  /* about us*/
+.texto-abt_us p
+{
+    color: var(--bg-white-color);
+    text-align: left;
+    font-size: 24px;
+    font-family: var(--font-pixel);
+    margin-top: 5%;
+    line-height: 34px;
+    padding-right: 3%;
+    padding-left: 5%;
+}
+/*sucursales*/
+.sucursales{
+    background-color: var(--main-bg-secondary-color);
+    width: 100%;
+    height: 500px;
+}
+
+#Sucursales{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sucursalesdiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex: 1;
+    height: 80%;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px; 
+    font-family: var(--font-primary);
+}
+h4{
+    font-size: var(--main-h4);
+}
+.gps h3{
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+.gps a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.gps iframe{
+    width: 300px;
+    height: 300px;
+}
+.mapa{
+    width: 200px;
+    height: 200px;
+}
+iframe{
+    border-radius: 2em;
+}
+/*formulario*/
+input{
+    margin-bottom: 2%;
+    border: none;
+    font-size: var(--font-size--primary);
+}
+input:last-child{
+    border: 1px solid var(--primary-color);
+    background-color: var(--bg-white-color);
+    color: var(--primary-color);
+    padding: 0.5%;
+}
+select{
+    margin-bottom: 2%;
+}
+.wrk_wt_us{
+    padding: 2%;
+    font-size: var(--font-size--primary);
+    color: var(--bg-white-color);
+    font-family: var(--font-primary);
+    border: none;
+    border: 2px solid white;
+}
+.formulario h2{
+    font-family: var(--font-pixel);
+    margin-bottom: 2%;
+    color: var(--primary-color);
+    text-align: center;
+}
+.formulario h3{
+    text-align: center;
+    padding:2%;
+    /*padding-bottom: 2%;*/
+    color: var(--secondary-color);
+}
