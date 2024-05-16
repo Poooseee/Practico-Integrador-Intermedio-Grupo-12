@@ -105,7 +105,7 @@
 }
 .img-abt_us img
 {
-    width: 120%;
+    width: 105%;
 }
 .texto-abt_us
 {
@@ -140,6 +140,7 @@
     width: 100%;
     padding-bottom: 3%;
 }
+
 /*Trabaja con nosotros*/
 
 .wrk_wt_us {
@@ -288,7 +289,7 @@ span {
     font-family: var(--font-pixel);
     margin-top: 5%;
     line-height: 34px;
-    padding-right: 3%;
+    padding-right: 4%;
     padding-left: 5%;
 }
 /*sucursales*/
@@ -303,13 +304,18 @@ span {
     justify-content: space-around;
 }
 .sucursales h2{
-    color: var(--bg-white-color);
+    color: var(--secondary-color);
     text-align: center;
     font-size: var(--font-size-big);
     font-weight: var(--font-weight-gruesa);
     font-family: var(--font-secondary);
     height: 150px;
     margin-top: 50px;
+}
+.sucursales h3{
+    color: var(--bg-white-color);
+    text-align: center;
+    font-family: var(--font-pixel);
 }
 .sucursalesdiv{
     display: grid;
@@ -332,9 +338,9 @@ h4{
     text-decoration: none;
     color: var(--primary-color);
 }
-.gps a:hover{
-    font-size: 20px;
-    transition: all 0.5s ease-in-out;
+.gps:hover{
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
 }
 .gps iframe{
     width: 300px;
@@ -347,17 +353,19 @@ h4{
 iframe{
     border-radius: 2em;
 }
+/*separacion*/
+.separacion
+{
+   width: 100%;
+   height: 6vh;
+    background:linear-gradient(to right,darkblue,var(--primary-color),darkblue); 
+}
 /*formulario*/
 input{
-    margin-bottom: 2%;
+    margin-bottom: 4.8%;
     border: none;
     font-size: var(--font-size--primary);
-}
-input:last-child{
-    border: 1px solid var(--primary-color);
-    background-color: var(--bg-white-color);
-    color: var(--primary-color);
-    padding: 0.5%;
+    margin-left: 4%;
 }
 select{
     margin-bottom: 2%;
@@ -369,8 +377,9 @@ select{
     font-family: var(--font-primary);
 }
 .formulario h2{
-    font-family: var(--font-pixel);
+    font-family: var(--font-primary);
     margin-bottom: 2%;
+    font-size: var(--font-size-big);
     color: var(--primary-color);
     text-align: center;
 }
@@ -379,10 +388,46 @@ select{
     padding:2%;
     /*padding-bottom: 2%;*/
     color: var(--secondary-color);
+    font-size: var(--font-size--primary);
+    font-family: var(--font-pixel);
 }
 .formulario form{
     margin-top: 2%;
+    padding-left: 5%;
+    display: inline-block;
 }
+input:last-child{
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--bg-white-color);
+    padding: 0.5%;
+    margin-top: 3%;
+    margin-left: 0;
+    border-radius: 5em;
+    width: 6em;
+    height: 2em;
+    font-weight: 600;
+}
+input:last-child:hover
+{
+    background-color: var(--bg-white-color);  
+    color: var(--primary-color);
+}
+
+
+#myform
+{
+    width: 40%;
+}
+#imglocal{
+margin-left: 10%;
+margin-top: 2%;
+display: inline-block;
+width: 40%;
+border-radius: 2em;
+}
+
+/*FOOTER*/
 .footer p{
     color: var(--bg-white-color);
     display: inline;
