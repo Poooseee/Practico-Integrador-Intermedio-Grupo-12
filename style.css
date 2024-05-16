@@ -429,6 +429,9 @@ border-radius: 2em;
 }
 
 /*FOOTER*/
+.footer{
+    overflow-y: hidden;
+}
 .footer p{
     color: var(--bg-white-color);
     display: inline;
