@@ -415,7 +415,6 @@ input:last-child:hover
     color: var(--primary-color);
 }
 
-
 #myform
 {
     width: 40%;
@@ -427,7 +426,6 @@ display: inline-block;
 width: 40%;
 border-radius: 2em;
 }
-
 /*FOOTER*/
 .footer{
     overflow-y: hidden;
