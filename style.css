@@ -375,6 +375,7 @@ select{
     font-size: var(--font-size--primary);
     color: var(--bg-white-color);
     font-family: var(--font-primary);
+    height: 800px;
 }
 .formulario h2{
     font-family: var(--font-primary);
