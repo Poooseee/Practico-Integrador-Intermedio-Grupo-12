@@ -456,3 +456,11 @@ border-radius: 2em;
     height: 30px;
     width: 30px;
 }
+.derechos-footer{
+    padding: 55px 10px;
+    height: 35px;
+}
+.derechos{
+    color: var(--bg-white-color);
+    text-align: center;
+}
