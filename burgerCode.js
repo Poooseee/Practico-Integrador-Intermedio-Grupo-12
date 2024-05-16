@@ -27,3 +27,62 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         punto[i].classList.add('activo')
     })
 })
+
+function validateForm(event)
+{
+  event.preventDefault();
+
+  //inputs
+  let nombre = document.getElementById("nombre").value;
+  let apellido = document.getElementById("apellido").value;
+  let telefono = document.getElementById("telefono").value;
+  let email = document.getElementById("email").value;
+
+  if(nombre.trim() === "")
+  {
+    alert("Por favor ingrese un nombre");
+    return false;
+  }
+
+  if(apellido.trim() === "")
+    {
+      alert("Por favor ingrese un apellido");
+      return false; 
+    }
+
+  if(telefono.trim() === "")
+    {
+      alert("Por favor ingrese un telefono");
+      return false; 
+    }
+
+  if(email.trim() === "")
+  {
+    alert("por favor ingresa un mail");
+    return false;
+  }
+
+  if(!isValidEmail(email))
+  {
+    alert("Por favor ingresa un MAIL VALIDO");
+    return true;
+  }
+
+
+
+function isValidEmail(email)
+{
+  let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  return emailRegex.test(email);
+}
+
+
+
+  alert("Formulario enviado correctamente");
+  return true;
+
+}  
+
+
+document.getElementById("myForm").addEventListener("submit", validateForm);
