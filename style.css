@@ -590,6 +590,8 @@ input:last-child:hover
     }
     .mercaderia {
         width: 30em;
+        padding-top: 2em;
+        padding-top: 2em;
     }
     #coca
     {
@@ -645,8 +647,35 @@ input:last-child:hover
         padding: 1.25em;
         width: 95%;
     }
+    #sucursales
+    {
+        height: 125em;
+        margin-bottom: -25em;
+    }
+    .sucursalesdiv
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .gps{
+        padding-top: 5em;
+    }
     .texto-abt_us {
         width: 100%;
         margin: 0;
-    };
+    }
+    .wrk_wt_us
+    {
+        height: auto;
+        padding-bottom: 5em;
+    }
+   .contenido{
+    display: flex;
+    flex-direction: column;
+    padding-left: 11em;
+   }
+   .contenido img{
+    width: 100%;
+    height: auto;
+   };
 }
