@@ -462,6 +462,9 @@ input:last-child:hover
 }
 /* CELULARES*/
 @media (max-width: 600px) {
+    .contenedor_body {
+        padding-top: 16.5em;
+    }
     .nav_bar {
         flex-direction: column;
         height: auto;
@@ -487,6 +490,14 @@ input:last-child:hover
         height: auto;
         padding: 20px;
     }
+    #Nosotros
+    {
+        font-size: 2em;
+    }
+    #sobre
+    {
+        font-size: 2em;
+    }
     .texto-abt_us {
         width: 100%;
         margin: 0;
@@ -504,7 +515,30 @@ input:last-child:hover
     }
     .mercaderia {
         width: 90%;
-    };
+    }
+    .formulario h2{
+        font-size: 2em;
+    }
+    #logo_footer{
+        height: 10em;
+        width: 10em;
+    }
+    .footer{
+        display: block;
+    }
+    .logo_pie{
+        width: 100%;
+        margin-left: 29%;
+        margin-top: 15%;
+    }
+    .mail_footer{
+        width: 100%;
+        margin-left: 25%;   
+    }
+    .ig_footer{
+        width: 100%;
+        margin-left: 32%;   
+    }
 }
 /* TABLETS */
 @media (max-width: 768px) {
