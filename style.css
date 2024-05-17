@@ -213,8 +213,11 @@
 .mercaderia
 {
     width: 33%;
+    line-height: 3em;
 }
-
+.mercaderia p{
+    font-size: 0.8em;
+}
 .tipos
 {
 padding-top: 3%;
