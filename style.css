@@ -332,6 +332,10 @@ input{
     margin-bottom: 4.8%;
     border: none;
     font-size: var(--font-size--primary);
+    padding: 0.3em;
+    border-radius: 2em;
+    text-align: center;
+    margin-left: 0.6em;
 }
 select{
     margin-bottom: 2%;
@@ -388,7 +392,6 @@ input:last-child:hover
     width: 90%;
     padding-top: 2em;
     margin: 0 auto;
-
 }
 .claseformulario
 {
@@ -409,6 +412,10 @@ input:last-child:hover
     width: 35em;
     border-radius: 2em;
 }
+#email
+{
+    margin-left: 2em;
+}
 
 /*SEPARACION*/
 .separacion
@@ -418,50 +425,49 @@ input:last-child:hover
     background:linear-gradient(to right,darkblue,var(--primary-color),darkblue); 
 }
 /*FOOTER*/
+footer
+{
+background-color: var(--primary-color);
+}
 .footer {
-    display: flex;
-    background-color: var(--bg-primary-color);
-    height: 31.25em;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     width: 100%;
-    overflow-y: hidden;
-    justify-content: space-around;
-    border-bottom: 2px solid var(--primary-color);
-}
-.footer p{
-    display: inline;
     color: var(--bg-white-color);
+    font-family: var(--font-pixel);
+    justify-content: center;
+    text-align: center;
 }
-.logo_pie{
-    margin-top: 5.3%;
-    margin-left: 3%;
+
+.logo_footer img
+{
+    width: 15em;
 }
-#logo_footer{
-    height: 18.75em;
-    width: 18.75em;
+.mail_footer
+{
+    padding-top: 5em;
 }
-.mail_footer{
-    margin-top: 14%;
-    width: 12em;
+.ig_footer
+{
+    margin-top: 5.3em;  
 }
-.ig_footer{
-    margin-top: 14%;
-    width: 12em;
+.mail_footer p{
+    margin-top: 1em;
 }
-.ig_footer img{
-    height: 1.875em;
-    width: 1.875em;
+.ig_footer p{
+    margin-top: 1em;
 }
+
+
 .derechos-footer{
-    padding: 3.438em 0.625em;
-    height: 2.188em;
+    padding: 1em;
+    background-color: rgb(142, 64, 151);
 }
 .derechos{
     color: var(--bg-white-color);
     text-align: center;
-}
-.derechos-footer{
-    background-color: var(--bg-primary-color);
-    height: 100%;
 }
 /* CELULARES*/
 @media (max-width: 600px) {
@@ -527,20 +533,11 @@ input:last-child:hover
         width: 10em;
     }
     .footer{
-        display: block;
-    }
-    .logo_pie{
-        width: 100%;
-        margin-left: 29%;
-        margin-top: 15%;
-    }
-    .mail_footer{
-        width: 100%;
-        margin-left: 25%;   
-    }
-    .ig_footer{
-        width: 100%;
-        margin-left: 32%;   
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding-bottom: 2em;
     }
 }
 /* TABLETS */
@@ -609,13 +606,6 @@ input:last-child:hover
     {
         height: 12.5em;
         width: auto;   
-    }
-  
-    .carrousel .img {
-        width: 50%;
-    }
-    .carrousel .grande {
-        flex-direction: column;
     }
     #sucursales
     {
