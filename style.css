@@ -35,7 +35,7 @@
     padding-top: var(--navtam);
 }
 
-/*NAV.*/
+/*NAV*/
 
 .img_logo img {
     width: 55%;
@@ -82,7 +82,7 @@
     width: 85%;
 }
 
-/*Burgers Favoritas*/
+/*IMAGEN HAMBURGUESAS*/
 .bg_fvs img {
     height: 108%;
     width: 100%;
@@ -93,16 +93,16 @@
     width: 100%;
     overflow: hidden;
 }
-/*Sobre nosotros*/
+/*SOBRE NOSOTROS*/
 .abt_us {
     background-color: var(--bg-primary-color);
-    height: 45em;
+    height: 50em;
     width: 100%;
 }
 .img-abt_us
 {
-   padding-top: 7%;
-   display: inline-block;
+    padding-top: 7%;
+    display: inline-block;
 }
 .img-abt_us img
 {
@@ -115,52 +115,88 @@
     margin-top: 2%;
     text-align: center;
 }
-.texto-abt_us h2
-{
-    font-size: 3.75em;
-    font-family: var(--font-pixel);
-}
+
 #Nosotros
 {
+    font-size: 3em;
     color: var( --secondary-color);
-    font-size: 4.375em;
     margin-left: 25%;
     margin-top: 2%;
+    font-family: var(--font-pixel);    
 }
 #sobre
 {
+    font-size: 3em;
     margin-right: 25%;
     color: var(--primary-color);
+    font-family: var(--font-pixel);
 }
 
-/*Sucursales*/
+.texto-abt_us p
+{
+    color: var(--bg-white-color);
+    text-align: left;
+    font-size: 1.3em;
+    font-family: var(--font-pixel);
+    margin-top: 5%;
+    line-height: 2.125em;
+    padding-right: 4%;
+    padding-left: 5%;
+}
 
-.suc {
-    background-color: var(--bg-primary-color);
-    height: 31.25em;
+/*Carrousell*/
+.puntos
+{
+    list-style:none
+}
+.carrousel {
     width: 100%;
-    padding-bottom: 3%;
-}
-
-/*Trabaja con nosotros*/
-
-.wrk_wt_us {
-    background-color: var(--bg-primary-color);
-    height: 43.75em;
+    max-width: 240em;
+    padding: 3%;
+    transition: all 0.4s ease;
+    background-color: white;
+    overflow: hidden;
+  }
+  .carrousel .grande {
+    width: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    background-color: white;
+    padding: 3%;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+  .carrousel .img {
+    width: calc(100% / 4 - 4em);
+    min-height: 10vh;
+    transition: all 0.4s ease;
+    background-color: white;
+  }
+  .carrousel .puntos {
     width: 100%;
-    border-bottom: 2px solid var(--primary-color);
-    overflow-y: hidden;
-}
-/*footer*/
-
-.footer {
-    background-color: var(--bg-primary-color);
-    height: 31.25em;
-    width: 100%;
-}
-
-/*menu*/
-
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carrousel .punto {
+    width: 1em;
+    height: 1em;
+    margin: 1em 1em 0;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: orange;
+  }
+  .carrousel .punto.activo {
+    background-color: lightblue;
+  }
+/*MENU*/
 .row img {
     width: 10.625em;
     border-radius: 10%;
@@ -229,71 +265,8 @@ span {
     width: 57%;
     height: 9.375em;
 }
-/*Carrousell*/
-.puntos
-{
-    list-style:none
-}
-.carrousel {
-    width: 100%;
-    max-width: 240em;
-    padding: 3%;
-    transition: all 0.4s ease;
-    background-color: white;
-    overflow: hidden;
-  }
-  .carrousel .grande {
-    width: 400%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.4s ease;
-    background-color: white;
-    padding: 3%;
-    transition: all 0.5s ease;
-    transform: translateX(0%);
-  }
-  .carrousel .img {
-    width: calc(100% / 4 - 4em);
-    min-height: 10vh;
-    transition: all 0.4s ease;
-    background-color: white;
-  }
-  .carrousel .puntos {
-    width: 100%;
-    margin: 1em 0 0;
-    padding: 0.4em;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .carrousel .punto {
-    width: 1em;
-    height: 1em;
-    margin: 1em 1em 0;
-    transition: all 0.4s ease;
-    border-radius: 1em;
-    background-color: orange;
-  }
-  .carrousel .punto.activo {
-    background-color: lightblue;
-  }
-  /* about us*/
-.texto-abt_us p
-{
-    color: var(--bg-white-color);
-    text-align: left;
-    font-size: 1.5em;
-    font-family: var(--font-pixel);
-    margin-top: 5%;
-    line-height: 2.125em;
-    padding-right: 4%;
-    padding-left: 5%;
-}
-/*sucursales*/
+
+/*SUCURSALES*/
 .sucursales{
     background-color: var(--bg-primary-color);
     width: 100%;
@@ -301,17 +274,17 @@ span {
 }
 
 #Sucursales{
-    display: flex;
     justify-content: space-around;
 }
+
 .sucursales h2{
     color: var(--secondary-color);
     text-align: center;
     font-size: var(--font-size-big);
     font-weight: var(--font-weight-gruesa);
     font-family: var(--font-secondary);
-    height: 9.375;
-    margin-top: 3.125em;
+    padding-top: 1em;
+    padding-bottom: 0.7em;
 }
 .sucursales h3{
     color: var(--bg-white-color);
@@ -322,17 +295,16 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     flex: 1;
-    height: 80%;
+    height: 65%;
     text-align: center;
     align-items: center;
     font-family: var(--font-primary);
-    margin-top: -3.75em;
 }
 h4{
-    font-size: var(--main-h4);
+    font-size: var(0.1em);
 }
 .gps h3{
-    margin-bottom: 0.938;
+    margin-bottom: 1.5em;
     color: var(--secondary-color);
 }
 .gps a{
@@ -340,47 +312,37 @@ h4{
     color: var(--primary-color);
 }
 .gps:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
     transition: all 0.2s ease-in-out;
 }
 .gps iframe{
-    width: 18.75em;
-    height: 18.75em;
-}
-.mapa{
-    width: 12.5em;
-    height: 12.5em;
-}
-iframe{
+    width: 16.75em;
+    height: 15em;
     border-radius: 2em;
 }
-/*separacion*/
-.separacion
-{
-   width: 100%;
-   height: 6vh;
-    background:linear-gradient(to right,darkblue,var(--primary-color),darkblue); 
-}
-/*formulario*/
+
+/*TRABAJA CON NOSOTROS*/
 input{
     margin-bottom: 4.8%;
     border: none;
     font-size: var(--font-size--primary);
-    margin-left: 4%;
 }
 select{
     margin-bottom: 2%;
 }
 .wrk_wt_us{
-    padding: 2%;
     font-size: var(--font-size--primary);
     color: var(--bg-white-color);
     font-family: var(--font-primary);
-    height: 50em;
+    background-color: var(--bg-primary-color);
+    height: 65em;
+    width: 100%;
+    border: solid 2px red;
 }
 .formulario h2{
+    padding-top: 1em;
     font-family: var(--font-primary);
-    margin-bottom: 2%;
+    margin-bottom: 0.1em;
     font-size: var(--font-size-big);
     color: var(--primary-color);
     text-align: center;
@@ -388,17 +350,13 @@ select{
 .formulario h3{
     text-align: center;
     padding:2%;
-    /*padding-bottom: 2%;*/
     color: var(--secondary-color);
     font-size: var(--font-size--primary);
     font-family: var(--font-pixel);
+    line-height: 1.3em;
 }
-.formulario form{
-    margin-top: 2%;
-    padding-left: 5%;
-    display: inline-block;
-}
-input:last-child{
+input:last-child
+{
     border: 0.125em solid var(--primary-color);
     background-color: var(--primary-color);
     color: var(--bg-white-color);
@@ -415,23 +373,51 @@ input:last-child:hover
     background-color: var(--bg-white-color);  
     color: var(--primary-color);
 }
-
-#myform
+.formulario
 {
-    width: 40%;
+    width: 100%;
 }
-#imglocal{
-margin-left: 10%;
-margin-top: 2%;
-display: inline-block;
-width: 40%;
-border-radius: 2em;
+.contenido
+{
+    width: 90%;
+    padding-top: 2em;
+    margin: 0 auto;
+
 }
-.file{
-    padding-top: 2%;
-    margin-left: 0;
+.claseformulario
+{
+    width: 50%;
+    float: left;
+    justify-content: center;
+    align-content: center;
+}
+.imagenformulario
+{
+    width: 50%;
+    float: right;
+    text-align: center;
+    justify-content: center;
+
+}
+.imagenformulario img
+{
+    width: 35em;
+    border-radius: 2em;
+}
+
+/*SEPARACION*/
+.separacion
+{
+    width: 100%;
+    height: 6vh;
+    background:linear-gradient(to right,darkblue,var(--primary-color),darkblue); 
 }
 /*FOOTER*/
+.footer {
+    background-color: var(--bg-primary-color);
+    height: 31.25em;
+    width: 100%;
+}
 .footer{
     overflow-y: hidden;
 }
