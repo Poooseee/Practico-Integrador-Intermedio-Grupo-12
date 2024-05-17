@@ -539,6 +539,12 @@ background-color: var(--primary-color);
         text-align: center;
         padding-bottom: 2em;
     }
+    .contenido{
+        margin-left: -10em;
+    }
+    .claseformulario{
+        width: 100%;
+    }
 }
 /* TABLETS */
 @media (max-width: 768px) {
