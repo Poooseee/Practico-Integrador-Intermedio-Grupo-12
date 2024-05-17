@@ -96,7 +96,7 @@
 /*SOBRE NOSOTROS*/
 .abt_us {
     background-color: var(--bg-primary-color);
-    height: 50em;
+    height: 45em;
     width: 100%;
 }
 .img-abt_us
@@ -226,10 +226,6 @@ font-size: 0.625em;
 color: darkblue;
 }
 
-.MENU h2 {
-    margin-left: 2%;
-}
-
 #menu {
     color: var(--bg-white-color);
     text-align: center;
@@ -237,7 +233,8 @@ color: darkblue;
     font-size: var(--font-size-big);
     font-weight: var(--font-weight-gruesa);
     font-family: var(--font-secondary);
-    height: 9.375em;
+    height: 3em;
+    margin-left: 2%;
     padding-top: 2%;
     margin: 0;
 }
@@ -337,7 +334,7 @@ select{
     background-color: var(--bg-primary-color);
     height: 65em;
     width: 100%;
-    border: solid 2px red;
+    border-bottom: 2px solid var(--primary-color);
 }
 .formulario h2{
     padding-top: 1em;
@@ -414,35 +411,33 @@ input:last-child:hover
 }
 /*FOOTER*/
 .footer {
+    display: flex;
     background-color: var(--bg-primary-color);
     height: 31.25em;
     width: 100%;
-}
-.footer{
     overflow-y: hidden;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--primary-color);
 }
 .footer p{
-    color: var(--bg-white-color);
     display: inline;
+    color: var(--bg-white-color);
 }
 .logo_pie{
-    display: inline-block;
     margin-top: 5.3%;
-    margin-left: 23%;
+    margin-left: 3%;
 }
 #logo_footer{
     height: 18.75em;
     width: 18.75em;
 }
 .mail_footer{
-    display: inline-block;
-    margin-bottom: 150px;
-    margin-left: 10%;
+    margin-top: 14%;
+    width: 12em;
 }
 .ig_footer{
-    display: inline-block;
-    margin-bottom: 9.375em;
-    margin-left: 9.375em;
+    margin-top: 14%;
+    width: 12em;
 }
 .ig_footer img{
     height: 1.875em;
@@ -455,4 +450,8 @@ input:last-child:hover
 .derechos{
     color: var(--bg-white-color);
     text-align: center;
+}
+.derechos-footer{
+    background-color: var(--bg-primary-color);
+    height: 100%;
 }

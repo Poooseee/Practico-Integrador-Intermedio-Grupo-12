@@ -36,6 +36,9 @@ function validateForm(event)
   let nombre = document.getElementById("nombre").value;
   let apellido = document.getElementById("apellido").value;
   let telefono = document.getElementById("telefono").value;
+  let anios = document.getElementById("anios").value;
+  let terminos = document.getElementById("terminos").value;
+  let cv = document.getElementById("cv").value;
   let email = document.getElementById("email").value;
 
   if(nombre.trim() === "")
@@ -54,6 +57,24 @@ function validateForm(event)
     {
       alert("Por favor ingrese un telefono");
       return false; 
+    }
+
+  if(anios.trim() == false)
+    {
+      alert("Por favor confirme que es mayor");
+      return false;
+    }
+
+  if(terminos.trim() == false)
+    {
+      alert("Por favor acepte los términos");
+      return false;
+    }
+
+  if(cv.trim() === "")
+    {
+      alert("Por favor suba su cv");
+      return false;
     }
 
   if(email.trim() === "")
