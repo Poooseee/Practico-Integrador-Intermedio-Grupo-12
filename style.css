@@ -154,6 +154,7 @@
     max-width: 240em;
     transition: all 0.4s ease;
     overflow: hidden;
+    margin-top: 1em;
   }
   .carrousel .grande {
     width: 400%;
@@ -495,10 +496,9 @@ background-color: var(--primary-color);
         height: auto;
         width: 100%;
     }
-    .abt_us {
-        height: auto;
-        padding: 20px;
-    }
+    .img-abt_us{
+        margin-left: 0;
+    };
     #Nosotros
     {
         font-size: 2em;
@@ -575,8 +575,6 @@ background-color: var(--primary-color);
     }
     .abt_us {
         height: auto;
-        padding: 1.25em;
-        width: 95%;
     }
     .texto-abt_us {
         width: 100%;
@@ -643,8 +641,7 @@ background-color: var(--primary-color);
    @media (max-width : 1160px) {
     .abt_us {
         height: auto;
-        padding: 1.25em;
-        width: 95%;
+        padding-bottom: 3em;
     }
     #sucursales
     {
