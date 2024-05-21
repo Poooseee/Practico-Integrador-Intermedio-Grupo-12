@@ -482,7 +482,6 @@ background-color: var(--primary-color);
     .img_logo {
         width: 50%;
         margin: 0 auto;  
-        padding-left: 4em; 
     }
     .anclas {
         width: 100%;
@@ -555,7 +554,7 @@ background-color: var(--primary-color);
     .img_logo {
         width: 30%;
         margin: 0 auto;
-        padding-left: 5em;
+        text-align: center;
     }
     .anclas {
         width: 100%;
@@ -578,10 +577,10 @@ background-color: var(--primary-color);
     }
     .texto-abt_us {
         width: 100%;
-        margin: 0;
+        margin: 0 auto;
     }
     .texto-abt_us p {
-        padding: 0;
+        padding: 1em;
     }
     .row {
         flex-direction: column;
